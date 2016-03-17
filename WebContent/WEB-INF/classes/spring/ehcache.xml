@@ -1,0 +1,65 @@
+<ehcache>
+    <!-- 此缓存支持硬盘存储,此处设置硬盘的存储目录 -->
+    <diskStore path="java.io.tmpdir"/>
+    <!-- 二级缓存的高级配置
+    	maxElementsInMemory: 支持的最大内存数量
+    	eternal: 是否永久生效,如果为true则后面两个参数无效
+    	timeToIdleSeconds: 对象的最大间隔时间
+    	timeToLiveSeconds：  对象的生命周期
+    	overflowToDisk： 是否支持溢出到硬盘
+    	memoryStoreEvictionPolicy: 内存对象的替换策略 
+    	diskPersistent：持久化到硬盘,支持项目的重启操作
+        diskExpiryThreadIntervalSeconds：重启间隔时间
+     -->
+
+    <!-- 测试1: 测试内存存储的对象数量  
+    
+    	  <defaultCache
+            maxElementsInMemory="6"
+            eternal="true"
+            timeToIdleSeconds="60"
+            timeToLiveSeconds="120"
+            overflowToDisk="false"
+            memoryStoreEvictionPolicy="LRU"
+            />
+            
+    	测试2: 测试对象的生命周期, eternal="false" 如果为true则 timeToIdleSeconds  timeToLiveSeconds无效
+    	
+    	<defaultCache
+            maxElementsInMemory="100"
+            eternal="false"
+            timeToIdleSeconds="20"
+            timeToLiveSeconds="30"
+            overflowToDisk="false"
+            memoryStoreEvictionPolicy="LRU"
+            />
+                         测试 3: 测试是否支持到硬盘
+                         
+       	 <defaultCache
+            maxElementsInMemory="1"
+            eternal="true"
+            overflowToDisk="true"
+            memoryStoreEvictionPolicy="LRU"
+            />
+            
+                          测试 4： 对象的替换算法   FIFO: 先进先处算法      LRU: 最近最未使用算法(时间优先)    LFU: 最近最少使用算法(频率优先)
+               
+         <defaultCache
+            maxElementsInMemory="3"
+            eternal="true"
+            timeToIdleSeconds="100"
+            timeToLiveSeconds="100"
+            overflowToDisk="false"
+            memoryStoreEvictionPolicy="LFU"
+            />           
+    -->
+
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="30"
+            timeToLiveSeconds="30"
+            overflowToDisk="true"
+            memoryStoreEvictionPolicy="LFU"
+            />
+</ehcache>

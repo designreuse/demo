@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- SpringMVC配置 -->
+	
+	<!-- 通过component-scan 让Spring扫描org.swinglife下的所有的Controller类，让Spring的代码注解生效 -->
+	<context:component-scan base-package="com.ozh.*" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+	</context:component-scan>
+
+    <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager">
+        <mvc:message-converters register-defaults="true">
+            <!-- 将StringHttpMessageConverter的默认编码设为UTF-8 -->
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" />
+            </bean>
+            <!-- 将Jackson2HttpMessageConverter的默认格式化输出设为true -->
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="prettyPrint" value="true"/>
+            </bean>
+        </mvc:message-converters>
+
+
+        <mvc:argument-resolvers>
+            <!--分页的一个实现 ？-->
+            <bean class="org.springframework.data.web.PageableHandlerMethodArgumentResolver" />
+            <!--暂时没有 shiro 控制-->
+<!--
+            <bean class="com.imall.iportal.shiro.bind.method.CurrUserMethodArgumentResolver"/>
+            <bean class="com.imall.iportal.shiro.bind.method.CurrUserOrgJobMethodArgumentResolver"/>
+-->
+        </mvc:argument-resolvers>
+    </mvc:annotation-driven>
+
+    <!-- REST中根据URL后缀自动判定Content-Type及相应的View -->
+    <bean id="contentNegotiationManager"
+          class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+        <property name="mediaTypes">
+            <value>
+                json=application/json
+                xml=application/xml
+                html=text/html
+            </value>
+        </property>
+        <!--默认的content type -->
+        <property name="defaultContentType" value="text/html"/>
+    </bean>
+    <!--取消注释，找不到对应的页面-->
+    <mvc:resources mapping="/static/**" location="/WEB-INF/static/"/>
+
+    <!-- ========================= VIEW定义 ========================= -->
+    <!-- 内容协商视图解析器；根据客户端的不同的请求决定不同的 view进行响应, 如 /blog/1.json /blog/1.xml -->
+    <!-- 会自动根据解析的contentType来决定使用哪个视图解析器（默认使用整个web应用中的viewResolver） -->
+<!--
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver" p:order="0">
+-->
+        <!-- 内容协商管理器 用于决定media type -->
+<!--
+        <property name="contentNegotiationManager" ref="contentNegotiationManager"/>
+-->
+        <!-- 默认视图 放在解析链最后 -->
+<!--
+        <property name="defaultViews">
+-->
+<!--
+            <list>
+-->
+                <!--<bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>-->
+<!--
+                <bean class="com.alibaba.fastjson.support.spring.FastJsonJsonView" />
+-->
+                <!--<bean class="org.springframework.web.servlet.view.xml.MarshallingView"/>-->
+<!--
+            </list>
+        </property>
+    </bean>
+-->
+
+
+
+    <!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
+    <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="contentType" value="text/html"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+</beans>

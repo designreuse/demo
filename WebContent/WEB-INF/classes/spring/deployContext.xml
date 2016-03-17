@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	
+	<description>跟平台和部署相关，便于根据不同平台替换的，只能放跟平台和部署相关的Bean</description>
+	
+	<beans profile="development">
+		<context:property-placeholder ignore-resource-not-found="true" 
+			location="classpath:properties/resources.development.properties"/>
+		<bean id="dataSource"
+			class="org.springframework.jndi.JndiObjectFactoryBean">
+			<property name="jndiName" value="jdbc/kosamDatasource" />
+			<property name="resourceRef" value="true" />
+		</bean>
+		<bean id="dataSourceProxy" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+	       	<property name="targetDataSource" ref="dataSource"/>
+	   </bean>
+	</beans>
+    <!--
+	<beans profile="sit">
+		<context:property-placeholder ignore-resource-not-found="true" location="classpath:properties/*.sit.properties"/>
+	</beans>
+	<beans profile="production">
+		<context:property-placeholder ignore-resource-not-found="true" 
+			location="classpath:properties/resources.production.properties"/>
+		<bean id="dataSource"
+			class="org.springframework.jndi.JndiObjectFactoryBean">
+			<property name="jndiName" value="jdbc/b2cDatasource" />
+			<property name="resourceRef" value="true" />
+		</bean>
+		<bean id="dataSourceProxy" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+	       	<property name="targetDataSource" ref="dataSource"/>
+	   </bean>
+	</beans>
+	<beans profile="standard">
+		<context:property-placeholder ignore-resource-not-found="true" 
+			location="classpath:properties/resources.standard.properties"/>
+		<bean id="dataSource"
+			class="org.springframework.jndi.JndiObjectFactoryBean">
+			<property name="jndiName" value="jdbc/b2cDatasource" />
+			<property name="resourceRef" value="true" />
+		</bean>
+		<bean id="dataSourceProxy" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+	       	<property name="targetDataSource" ref="dataSource"/>
+	   </bean>
+	</beans>
+	-->
+</beans>
