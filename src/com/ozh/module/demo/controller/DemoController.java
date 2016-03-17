@@ -15,15 +15,32 @@ import com.ozh.utils.SpringContextHolder;
  * Created by tgx on 2015/5/11.
  */
 @Controller
-@RequestMapping(value = "demo")
+@RequestMapping(value = "admin")
 public class DemoController {
 
     private final static String SUCCESS = "success";
-
-    @RequestMapping(value = "/demo.html", method = RequestMethod.GET)
-    public String toDemo() {
-        return "/b2c/demo";
+    @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+    public String toIndex() {
+        return "/admin/frame";
     }
+
+    @RequestMapping(value = "/home_top.html", method = RequestMethod.GET)
+    public String toHomeTop() {
+        return "/admin/top";
+    }
+    @RequestMapping(value = "/home_left.html", method = RequestMethod.GET)
+    public String toHoneLeft() {
+        return "/admin/left";
+    }
+    @RequestMapping(value = "/bg.html", method = RequestMethod.GET)
+    public String tobg() {
+        return "/admin/common/bg";
+    }
+    @RequestMapping(value = "/welcome.html", method = RequestMethod.GET)
+    public String toWelcome() {
+        return "/admin/common/welcome";
+    }
+
 
     @RequestMapping(value = "/saveInfo", method = RequestMethod.POST)
     @ResponseBody
