@@ -6,112 +6,70 @@
     request.setAttribute("basePath", basePath);
 %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-    <base href="<%=basePath%>"/>
-    <link href="${ctx}/static/css/nsfw/css.css" rel="stylesheet" type="text/css" />
-    <link href="${ctx}/static/css/nsfw/style.css" rel="stylesheet" type="text/css" />
-    <script src="${ctx}/static/js/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        //隐藏菜单
-        $(document).ready(function () {
-            $("dt a").click(function () {
-                var cur = $(this);
-                cur.parent().next().toggle(700);
-                var cur_dl = cur.parent().parent();
-                doRemoveCurClass();
-                $(cur_dl).addClass("curr");
-            });
-
-            $("dd a").each(function () {
-                $(this).bind("click", function () {
-                    doRemoveCurClass();
-                    $(this).addClass("cur");
-                });
-            });
-           
-        });
-
-        function doRemoveCurClass() {
-            $("dl").each(function () {
-                $(this).removeClass("curr");
-                $("dd a").each(function () {
-                    $(this).removeClass("cur");
-                });
-            });
-        }
-
-        function closeOtherDD(id) {
-            $("dd").each(function () {
-                if ($(this).attr("id") != id + "dd") {
-                    $(this).hide(700);
-                }
-            });
-        }
-    </script>
-    <!--[if IE 6]>
-    <script type="text/javascript" src="${basePath}js/DD_belatedPNG.js"></script>
-    <script type="text/javascript">
-        DD_belatedPNG.fix('b, s, img, span, .prev, .next, a, input,');
-    </script>
-    <![endif]-->
-    <style>
-        * {
-            scrollbar-face-color: #dee3e7; /*立体滚动条的颜色（包括箭头部分的背景色）*/
-            scrollbar-highlight-color: #ffffff; /*滚动条的高亮颜色（左阴影？）*/
-            scrollbar-shadow-color: #dee3e7; /*立体滚动条阴影的颜色*/
-            scrollbar-3dlight-color: #eceaea; /*立体滚动条亮边的颜色*/
-            scrollbar-arrow-color: #006699; /*三角箭头的颜色*/
-            scrollbar-track-color: #efefef; /*立体滚动条背景颜色*/
-            scrollbar-darkshadow-color: #eceaea; /*滚动条的基色*/
-        }
-    </style>
-</head>
-
-<body>
-<div class="xzfw" style="width: 210px;">
-    <div class="xzfw_nav" style="width:214px;min-height:500px;">
-        <div class="nBox" style="width:214px;">
-            <div class="x_top" style="width:214px;"></div>
-            <div class="sm">
-				<dl class="">
-                    <dt><a class="yh" href="${ctx }nsfw/role_listUI.action" target="mainFrame"><b></b>角色管理<s class="down"></s>
-                    </a></dt>
-                </dl>
-                <dl class="">
-                    <dt><a class="yh" href="${ctx }nsfw/user_listUI.action" target="mainFrame"><b></b>用户管理<s class="down"></s>
-                    </a></dt>
-                </dl>
-
-                <dl>
-                    <dt><a class="xxfb" href="${ctx }nsfw/info_listUI.action" target="mainFrame"><b></b>信息发布管理<s
-                            class="down"></s> </a></dt>
-                </dl>
-                <dl class="">
-                    <dt><a class="tssl" href="${ctx }nsfw/complain_listUI.action" target="mainFrame"><b></b>投诉受理管理<s
-                            class="down"></s> </a></dt>
-                </dl>
-                <dl class="">
-                    <dt><a class="nszx" href="#" target="mainFrame"><b></b>纳税咨询管理<s class="down"></s> </a></dt>
-                </dl>
-
-                <dl class="">
-                    <dt><a class="fwdc" href="#" target="mainFrame"><b></b>服务调查管理<s class="down"></s> </a></dt>
-                </dl>
-                <dl class="">
-                    <dt><a class="ygz" href="#" target="mainFrame"><b></b>易告知管理<s class="down"></s> </a></dt>
-                </dl>
-                <dl class="">
-                    <dt><a class="fwyy" style="cursor: pointer;"><b></b>服务预约管理<s class="down"></s> </a></dt>
-                    <dd id="fwyygl" style="display:none;">
-                        <a class="" href="#" target="mainFrame"><b></b>预约服务</a>
-                        <a class="" href="#" target="mainFrame"><b></b>预约事项</a>
-                    </dd>
-                </dl>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Alexander Pierce</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
-    </div>
-</div>
-</body>
-</html>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">O商城 后台管理</li>
+            <li class="active treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>
+                    <span>会员管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="${ctx}admin/home_left.html" target="mainFrame"><i class="fa fa-circle-o"></i> 会员列表</a></li>
+                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-files-o"></i>
+                    <span>商品管理</span>
+                    <span class="label label-primary pull-right">4</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+                    <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+                    <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+                    <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="pages/widgets.html">
+                    <i class="fa fa-th"></i> <span>Widgets</span>
+                    <small class="label pull-right bg-green">new</small>
+                </a>
+            </li>
+
+            <li class="header">LABELS</li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+

@@ -2,153 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="621d2f86-086c-435e-9209-2d06bdce255e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/banner_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/banner_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/banner_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/banner_bg.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/banner_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/banner_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/banner_xt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/banner_xt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/bosimao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/bt2_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/bt2_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/bt_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/bt_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/skin1/button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/dcl_jd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/dcr_jd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/dy_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/e_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/e_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/common/error.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/exam_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/flash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/flash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/form_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/form_07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/form_15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/form_17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/gl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grtx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grzx01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grzx01_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grzx02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grzx03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/grzx04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/gs09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/gs10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/gslogo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/home_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/home_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/icoBG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/icon_yy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/ind01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/ind01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/ind02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/ind03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/jf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/jt_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/kjfs_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfs_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/kjfx_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/kuan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/left_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/left_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/left_bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/left_jd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/lmbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/maximize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/menu_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/pm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/right_bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/right_jd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/shuru_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/login/shuru_03_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/sj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sm_ddbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sm_libg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sm_libg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sm_libg2curr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/sw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/top01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/top02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/top03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/home/top_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/top_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/top_bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xingzheng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_kjfs01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_kjfs02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_kjfs03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_kjfs04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xs_kjfs05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xslm_bg01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xslm_bg02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xsxs_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xszst_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xzfw_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xzfwptBg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xzfwptBg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xzfwptBg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/xzfwpt_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/images/nsfw/文字.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/info/addUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/role/addUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/user/addUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/complain/annualStatisticChartUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/common/bg.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/common/bg.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/css/nsfw/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/complain/dealUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/info/editUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/role/editUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/user/editUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/common/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/common/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/complain/listUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/info/listUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/role/listUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/user/listUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/common/pageNavigator.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/common/pageNavigator.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/css/skin1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/css/nsfw/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/common/welcome.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/static/common/welcome.jsp" />
-      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\admin\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java" afterPath="$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/footer.jsp" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\common\bg.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\common\header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\common\pageNavigator.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\common\welcome.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\css\home.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\css\login.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\css\nsfw\css.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\css\nsfw\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\css\skin1.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\common\error.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\banner_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\banner_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\banner_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\banner_xt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\bt2_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\bt_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\exit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\flash.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\gs09.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\gs10.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\help.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\home_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\ind01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\ind02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\kjfs_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\left_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\sj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\home\top_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\bg2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\form_03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\form_07.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\form_15.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\form_17.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\kuan.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\shuru_03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\login\shuru_03_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\banner_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\banner_bg.psd" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\banner_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\banner_xt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\bosimao.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\bt2_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\bt_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\dcl_jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\dcr_jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\dy_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\e_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\e_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\exam_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\exit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\flash.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\gl.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grtx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grzx01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grzx01_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grzx02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grzx03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\grzx04.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\gslogo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\help.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\home_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\icoBG.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\icon_yy.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\ind01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\ind03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\jf.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\jt_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfs_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx04.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx05.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx06.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx07.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx08.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx09.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx10.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\kjfx_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\left_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\left_bj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\left_jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\lmbg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\maximize.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\menu_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\pm.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\right_bj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\right_jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sm_ddbg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sm_libg1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sm_libg2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sm_libg2curr.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\sw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\top01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\top02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\top03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\top_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\top_bj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xingzheng.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xj.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs04.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs05.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_kjfs01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_kjfs02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_kjfs03.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_kjfs04.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xs_kjfs05.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xslm_bg01.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xslm_bg02.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xsxs_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xszst_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xt.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xzfw_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xzfwptBg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xzfwptBg1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xzfwptBg2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\xzfwpt_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\nsfw\文字.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\images\skin1\button.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\demo\WebContent\WEB-INF\static\js\common\jquery-1.11.1.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="springDemo.iws" />
@@ -180,7 +163,61 @@
     <favorites_list name="springDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="frame.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.344828" vertical-offset="340" max-vertical-offset="880">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.793104" vertical-offset="5233" max-vertical-offset="5840">
+              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.034483" vertical-offset="660" max-vertical-offset="1620">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhengwen.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/zhengwen.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6419214" vertical-offset="17653" max-vertical-offset="18200">
+              <caret line="890" column="19" selection-start-line="890" selection-start-column="19" selection-end-line="890" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1000">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -197,8 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ozh/sdk/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/ozh/sdk/service/UserApiService.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/core/repository/SysUserRepositoryCustom.java" />
         <option value="$PROJECT_DIR$/src/com/ozh/core/repository/impl/SysUserRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/sdk.tld" />
@@ -244,10 +279,12 @@
         <option value="$PROJECT_DIR$/src/com/ozh/module/shoppingcart/service/NormalShoppingFlowService.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/static/common/welcome.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp" />
         <option value="$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/footer.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/zhengwen.jsp" />
       </list>
     </option>
   </component>
@@ -316,8 +353,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,6 +429,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adminLTE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -420,7 +481,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="b2c" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,15 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ozh" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,88 +523,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ozh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ozh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ozh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -564,7 +547,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mamameicai/imall-future/commons/commons-parent/pom.xml" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -946,7 +929,8 @@
       <workItem from="1457843238135" duration="2752000" />
       <workItem from="1457961240010" duration="5874000" />
       <workItem from="1458203219336" duration="307000" />
-      <workItem from="1458216550102" duration="3512000" />
+      <workItem from="1458216550102" duration="5171000" />
+      <workItem from="1458477090841" duration="6501000" />
     </task>
     <task id="LOCAL-00001" summary="修改包名">
       <created>1456749246611</created>
@@ -972,11 +956,17 @@
       <option name="project" value="LOCAL" />
       <updated>1458203334946</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="测试界面">
+      <created>1458220083223</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1458220083223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53943000" />
+    <option name="totallyTimeSpent" value="62103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1002,7 +992,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25189108" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21255673" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1373,37 +1363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8235295" vertical-offset="1536" max-vertical-offset="2140">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/info/addUI.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/static/js/common/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1438849" vertical-offset="0" max-vertical-offset="556">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.10544816" vertical-offset="1620" max-vertical-offset="3300">
-          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="88" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1411,15 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1060">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/static/common/pageNavigator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,14 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="280">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/static/common/bg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1451,62 +1397,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="545">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/static/common/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.965517" vertical-offset="0" max-vertical-offset="460">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ozh/module/demo/controller/DemoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1160">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1000">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
             <element signature="e#1109#1110#0" expanded="true" />
             <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp">
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="2460">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <marker date="1458218899748" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-0.019332161" vertical-offset="1771" max-vertical-offset="3300">
+          <caret line="88" column="25" selection-start-line="78" selection-start-column="1" selection-end-line="88" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp">
+    <entry file="file://$PROJECT_DIR$/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897" vertical-offset="140" max-vertical-offset="680">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/static/adminLTE/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-158.51799" vertical-offset="88136" max-vertical-offset="135320">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3841912" vertical-offset="971" max-vertical-offset="2140">
+          <caret line="59" column="65" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18518518" vertical-offset="0" max-vertical-offset="540">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61290324" vertical-offset="1397" max-vertical-offset="1960">
-          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-          <folding>
-            <marker date="1458219707849" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-16.793104" vertical-offset="5233" max-vertical-offset="5840">
+          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/left.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.034483" vertical-offset="660" max-vertical-offset="1620">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/frame.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.344828" vertical-offset="340" max-vertical-offset="880">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/admin/zhengwen.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6419214" vertical-offset="17653" max-vertical-offset="18200">
+          <caret line="890" column="19" selection-start-line="890" selection-start-column="19" selection-end-line="890" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

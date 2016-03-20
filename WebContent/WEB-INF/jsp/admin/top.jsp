@@ -1,92 +1,286 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="/WEB-INF/jsp/b2c/common/taglibs.jsp"%>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<%@ include file="/WEB-INF/jsp/b2c/common/taglibs.jsp"%>
 <head>
-	<link href="${ctx}/static/css/nsfw/css.css" rel="stylesheet" type="text/css" />
-	<link href="${ctx}/static/css/nsfw/style.css" rel="stylesheet" type="text/css" />
-<!--[if IE 6]>
-	<script type="text/javascript" src="${ctx}/static/js/DD_belatedPNG.js" ></script>
-	<script type="text/javascript">
-		DD_belatedPNG.fix('b, s, img, span, .prev, .next, a, input,');
-	</script>
-<![endif]-->
-<script type="text/javascript">
-	function openApp(url) {
-		window.top.location = url;
-	}
-	function delCookie() {
-		top.document.cookie = "TopNode=;expires=Fri, 31 Dec 1999 23:59:59 GMT;";
-	}
-</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AdminLTE 2 | Dashboard</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="${ctx}/adminbootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${ctx}/admindist/css/AdminLTE.min.css">
+	<link rel="stylesheet" href="${ctx}/admindist/css/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="${ctx}/adminplugins/jvectormap/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="${ctx}/admin/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="${ctx}/admin/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="${ctx}/admin/dist/js/app.min.js"></script>
 </head>
 
-<body>
-	<!-- 头部{ -->
-	<table width="1222" border="0" align="center" cellpadding="0" cellspacing="0" background="${basePath}images/nsfw/xingzheng.png" class="top">
-		<tr>
-			<td width="26" height="106">&nbsp;</td>
-			<td width="416" height="110" align="left" valign="middle">
-				<img class="zxx_test_png" src="${basePath}images/home/ind01.png" width="470" height="90" alt="" />
-			</td>
-			<td width="135">&nbsp;</td>
-			<td width="418">
-				<object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="86">
-					<param name="movie" value="${basePath}images/home/flash.swf" />
-					<param name="quality" value="high" />
-					<param name="wmode" value="transparent" />
-					<param name="swfversion" value="6.0.65.0" />
-					<!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
-					<param name="expressinstall" value="Scripts/expressInstall.swf" />
-					<!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
-					<!--[if !IE]>-->
-					<object type="application/x-shockwave-flash" data="${basePath}images/home/flash.swf"
-						width="380" height="86">
-						<!--<![endif]-->
-						<param name="quality" value="high" />
-						<param name="wmode" value="transparent" />
-						<param name="swfversion" value="6.0.65.0" />
-						<param name="expressinstall" value="Scripts/expressInstall.swf" />
-						<!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
-						<div>
-							<h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
-							<p>
-								<a href="http://www.adobe.com/go/getflashplayer">
-									<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" />
-								</a>
-							</p>
-						</div>
-						<!--[if !IE]>-->
-					</object>
-					<!--<![endif]-->
-				</object>
-			</td>
-			<td width="300" align="right" valign="top">
-				<table width="350" border="0" cellpadding="0" cellspacing="0">
-					<tr>
-						<td width="17" height="9"></td>
-                        <td width="66" height="9"></td>
-                        <td width="120" height="5"></td>
-                        <td width="17" height="9"></td>
-						<td width="36" height="9"></td>
-						<td width="17"></td>
-						<td width="46"></td>
-					</tr>
-					<tr>
-					    <td align="center"></td>
-                        <td align="left"></td>
-                        <td align="left"><a><b></b><font color="red">欢迎您，${sessionScope.SYS_USER.name }</font></a></td>
-                        <td align="center"><img src="${basePath}images/nsfw/help.png" width="12"height="17" /></td>
-						<td align="left"><a href="javascript:void(0)">帮助</a></td>
-						<td width="17" align="center"><img src="${basePath}images/nsfw/exit.png"width="14" height="14"/></td>
-						<td align="left" valign="middle"><a href="${basePath}sys/login_logout.action" target="_top">退出</a></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!-- }头部 -->
 
-</body>
-</html>
+<header class="main-header">
+	<!-- Logo -->
+	<a href="index2.html" class="logo">
+		<!-- mini logo for sidebar mini 50x50 pixels -->
+		<span class="logo-mini"><b>A</b>LT</span>
+		<!-- logo for regular state and mobile devices -->
+		<span class="logo-lg"><b>Admin</b>LTE</span>
+	</a>
+	<!-- Header Navbar: style can be found in header.less -->
+	<nav class="navbar navbar-static-top" role="navigation">
+		<!-- Sidebar toggle button-->
+		<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+			<span class="sr-only">Toggle navigation</span>
+		</a>
+
+		<div class="navbar-custom-menu">
+			<ul class="nav navbar-nav">
+				<!-- Messages: style can be found in dropdown.less-->
+				<li class="dropdown messages-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-envelope-o"></i>
+						<span class="label label-success">4</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="header">You have 4 messages</li>
+						<li>
+							<!-- inner menu: contains the actual data -->
+							<ul class="menu">
+								<li><!-- start message -->
+									<a href="#">
+										<div class="pull-left">
+											<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+										</div>
+										<h4>
+											Support Team
+											<small><i class="fa fa-clock-o"></i> 5 mins</small>
+										</h4>
+										<p>Why not buy a new awesome theme?</p>
+									</a>
+								</li>
+								<!-- end message -->
+								<li>
+									<a href="#">
+										<div class="pull-left">
+											<img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+										</div>
+										<h4>
+											AdminLTE Design Team
+											<small><i class="fa fa-clock-o"></i> 2 hours</small>
+										</h4>
+										<p>Why not buy a new awesome theme?</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="pull-left">
+											<img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+										</div>
+										<h4>
+											Developers
+											<small><i class="fa fa-clock-o"></i> Today</small>
+										</h4>
+										<p>Why not buy a new awesome theme?</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="pull-left">
+											<img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+										</div>
+										<h4>
+											Sales Department
+											<small><i class="fa fa-clock-o"></i> Yesterday</small>
+										</h4>
+										<p>Why not buy a new awesome theme?</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="pull-left">
+											<img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+										</div>
+										<h4>
+											Reviewers
+											<small><i class="fa fa-clock-o"></i> 2 days</small>
+										</h4>
+										<p>Why not buy a new awesome theme?</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer"><a href="#">See All Messages</a></li>
+					</ul>
+				</li>
+				<!-- Notifications: style can be found in dropdown.less -->
+				<li class="dropdown notifications-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-bell-o"></i>
+						<span class="label label-warning">10</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="header">You have 10 notifications</li>
+						<li>
+							<!-- inner menu: contains the actual data -->
+							<ul class="menu">
+								<li>
+									<a href="#">
+										<i class="fa fa-users text-aqua"></i> 5 new members joined today
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+										page and may cause design problems
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-users text-red"></i> 5 new members joined
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-shopping-cart text-green"></i> 25 sales made
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user text-red"></i> You changed your username
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer"><a href="#">View all</a></li>
+					</ul>
+				</li>
+				<!-- Tasks: style can be found in dropdown.less -->
+				<li class="dropdown tasks-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-flag-o"></i>
+						<span class="label label-danger">9</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="header">You have 9 tasks</li>
+						<li>
+							<!-- inner menu: contains the actual data -->
+							<ul class="menu">
+								<li><!-- Task item -->
+									<a href="#">
+										<h3>
+											Design some buttons
+											<small class="pull-right">20%</small>
+										</h3>
+										<div class="progress xs">
+											<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+												<span class="sr-only">20% Complete</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!-- end task item -->
+								<li><!-- Task item -->
+									<a href="#">
+										<h3>
+											Create a nice theme
+											<small class="pull-right">40%</small>
+										</h3>
+										<div class="progress xs">
+											<div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+												<span class="sr-only">40% Complete</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!-- end task item -->
+								<li><!-- Task item -->
+									<a href="#">
+										<h3>
+											Some task I need to do
+											<small class="pull-right">60%</small>
+										</h3>
+										<div class="progress xs">
+											<div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+												<span class="sr-only">60% Complete</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!-- end task item -->
+								<li><!-- Task item -->
+									<a href="#">
+										<h3>
+											Make beautiful transitions
+											<small class="pull-right">80%</small>
+										</h3>
+										<div class="progress xs">
+											<div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+												<span class="sr-only">80% Complete</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!-- end task item -->
+							</ul>
+						</li>
+						<li class="footer">
+							<a href="#">View all tasks</a>
+						</li>
+					</ul>
+				</li>
+				<!-- User Account: style can be found in dropdown.less -->
+				<li class="dropdown user user-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+						<span class="hidden-xs">Alexander Pierce</span>
+					</a>
+					<ul class="dropdown-menu">
+						<!-- User image -->
+						<li class="user-header">
+							<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+							<p>
+								Alexander Pierce - Web Developer
+								<small>Member since Nov. 2012</small>
+							</p>
+						</li>
+						<!-- Menu Body -->
+						<li class="user-body">
+							<div class="row">
+								<div class="col-xs-4 text-center">
+									<a href="#">Followers</a>
+								</div>
+								<div class="col-xs-4 text-center">
+									<a href="#">Sales</a>
+								</div>
+								<div class="col-xs-4 text-center">
+									<a href="#">Friends</a>
+								</div>
+							</div>
+							<!-- /.row -->
+						</li>
+						<!-- Menu Footer-->
+						<li class="user-footer">
+							<div class="pull-left">
+								<a href="#" class="btn btn-default btn-flat">Profile</a>
+							</div>
+							<div class="pull-right">
+								<a href="#" class="btn btn-default btn-flat">Sign out</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<!-- Control Sidebar Toggle Button -->
+				<li>
+					<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
