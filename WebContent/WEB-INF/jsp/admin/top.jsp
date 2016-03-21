@@ -1,27 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/jsp/b2c/common/taglibs.jsp"%>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AdminLTE 2 | Dashboard</title>
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" href="${ctx}/adminbootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="${ctx}/admindist/css/AdminLTE.min.css">
-	<link rel="stylesheet" href="${ctx}/admindist/css/skins/_all-skins.min.css">
-	<link rel="stylesheet" href="${ctx}/adminplugins/jvectormap/jquery-jvectormap-1.2.2.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="${ctx}/admin/plugins/jQuery/jQuery-2.2.0.min.js"></script>
-	<!-- Bootstrap 3.3.5 -->
-	<script src="${ctx}/admin/bootstrap/js/bootstrap.min.js"></script>
-
-	<script src="${ctx}/admin/dist/js/app.min.js"></script>
-</head>
-
 
 <header class="main-header">
 	<!-- Logo -->

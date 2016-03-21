@@ -40,7 +40,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="${ctx}admin/home_left.html" target="mainFrame"><i class="fa fa-circle-o"></i> 会员列表</a></li>
+                    <li class="active"><a href="${ctx}admin/userUI.html"><i class="fa fa-circle-o"></i> 会员列表</a></li>
                     <li><a href="index2.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
                 </ul>
             </li>

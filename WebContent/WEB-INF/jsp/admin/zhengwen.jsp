@@ -1,3 +1,10 @@
+
+<script src="${ctx}static/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="${ctx}static/adminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="${ctx}static/adminLTE/plugins/fastclick/fastclick.js"></script>
+<link rel="stylesheet" href="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
+
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -902,3 +909,16 @@
   </section>
   <!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>

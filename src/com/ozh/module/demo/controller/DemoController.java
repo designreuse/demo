@@ -21,7 +21,7 @@ public class DemoController {
     private final static String SUCCESS = "success";
     @RequestMapping(value = "/index.html", method = RequestMethod.GET)
     public String toIndex() {
-        return "/admin/frame";
+        return "/admin/index";
     }
 
     @RequestMapping(value = "/home_top.html", method = RequestMethod.GET)
@@ -32,10 +32,17 @@ public class DemoController {
     public String toHoneLeft() {
         return "/admin/left";
     }
+    @RequestMapping(value = "/userUI.html", method = RequestMethod.GET)
+    public String toUserUI() {
+        return "/admin/user/userList";
+    }
+
+
     @RequestMapping(value = "/bg.html", method = RequestMethod.GET)
     public String tobg() {
         return "/admin/common/bg";
     }
+
     @RequestMapping(value = "/welcome.html", method = RequestMethod.GET)
     public String toWelcome() {
         return "/admin/common/welcome";
