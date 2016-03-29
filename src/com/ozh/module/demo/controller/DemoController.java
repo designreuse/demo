@@ -49,7 +49,7 @@ public class DemoController {
     }
 
 
-    @RequestMapping(value = "/saveInfo", method = RequestMethod.POST)
+    @RequestMapping(value = "/saveInfo", method = RequestMethod.GET)
     @ResponseBody
     public String getNameAndPassword(ModelMap model, @PageableDefault(page = 0, size = 10) Pageable pageable, String name, String password) {
 
