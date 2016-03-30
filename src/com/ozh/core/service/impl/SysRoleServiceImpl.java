@@ -5,6 +5,8 @@ package com.ozh.core.service.impl;
 import com.ozh.common.service.impl.AbstractBaseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.ozh.core.entity.SysRole;
@@ -25,4 +27,9 @@ public class SysRoleServiceImpl extends AbstractBaseService<SysRole, Long> imple
 		return (SysRoleRepository) baseRepository;
 	}
 
+
+	@Override
+	public Page findSysRoleList(Pageable pageable, String search) {
+		return getSysRoleRepository().findSysRoleList(pageable,search);
+	}
 }

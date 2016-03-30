@@ -8,7 +8,7 @@
 <html>
 <head>
   <base href="${basePath}">
-  <title>会员列表</title>
+  <title>角色列表</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="${ctx}static/adminLTE/dist/css/AdminLTE.min.css">
@@ -23,6 +23,7 @@
   <!-- Bootstrap 3.3.5 -->
   <script src="${ctx}static/adminLTE/bootstrap/js/bootstrap.min.js"></script>
   <script src="${ctx}static/adminLTE/dist/js/app.min.js"></script>
+  <script src="${ctx}static/js/user/userList.js"></script>
 
   <script src="${ctx}static/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
@@ -33,10 +34,6 @@
 
 
   <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
-  <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
-  <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
-  <script src="${ctx}static/js/user/userList.js"></script>
-
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -63,11 +60,13 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Data Table With Full Features</h3>
+              <%--<div style="width: 100px"><button class="btn btn-success btn-labeled fa fa-plus">新增</button>--%>
+              <%--</div>--%>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <div id="toolbar" class="btn-group">
-                <button id="btn_add" type="button" class="btn btn-default" >
+                <button id="btn_add" type="button" class="btn btn-default">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
                 </button>
                 <button id="btn_edit" type="button" class="btn btn-default">
@@ -80,7 +79,7 @@
               <table data-toggle="table"
                       id="userList"
                      class="table table-bordered table-striped"
-                     data-url="${ctx}/sysUser/findUserList.json"
+                     data-url="${ctx}/sysRole/findSysRoleList.json"
                      data-search="true"
                      data-click-to-select="true"
                      data-show-refresh="true"
@@ -94,23 +93,12 @@
                      data-query-params-type='limit'
                      data-pagination="true"
                      data-uniqueId="ID"
-                      data-toolbar="#toolbar"
                       >
                 <thead>
                 <tr>
-                  <th data-field="id"  data-checkbox="true"></th>
-                  <th data-field="loginId" data-sortable="true">登陆账号</th>
-                  <th data-field="isAdmin" data-sortable="true">是否是管理员</th>
-                  <th data-field="userName" data-sortable="true">名称</th>
-                  <th data-field="userPsw" data-sortable="true">密码</th>
-                  <th data-field="userMobile" data-sortable="true">手机</th>
-                  <th data-field="userTel" data-sortable="true">电话</th>
-                  <th data-field="userSexCode" data-sortable="true">性别</th>
-                  <th data-field="userEmail" data-sortable="true">邮箱</th>
-                  <th data-field="registerDate" data-sortable="true">注册时间</th>
-                  <th data-field="userIcon" data-sortable="true">头像</th>
-                  <th data-field="lastPswModifyTime" data-sortable="true">最后修改密码时间</th>
-                  <th data-field="LAST_BUY_TIME" data-sortable="true">最后购买时间</th>
+                  <th data-field="sysRoleNm" data-sortable="true">角色名称</th>
+                  <th data-field="position" data-sortable="true">排序</th>
+                  <th data-field="score" data-sortable="true">score</th>
                 </tr>
                 </thead>
 

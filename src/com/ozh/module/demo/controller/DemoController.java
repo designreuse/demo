@@ -36,7 +36,10 @@ public class DemoController {
     public String toUserUI() {
         return "/admin/user/userList";
     }
-
+    @RequestMapping(value = "/sysRoleUI.html", method = RequestMethod.GET)
+    public String toSysRoleUI() {
+        return "/admin/role/sysRoleList";
+    }
 
     @RequestMapping(value = "/bg.html", method = RequestMethod.GET)
     public String tobg() {

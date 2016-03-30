@@ -41,7 +41,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="active"><a href="${ctx}admin/userUI.html"><i class="fa fa-circle-o"></i> 会员列表</a></li>
-                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                    <li><a href="${ctx}admin/sysRoleUI.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
