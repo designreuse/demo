@@ -21,6 +21,12 @@ create table SYS_USER
    IS_DELETE            enum('Y','N') not null,
    LAST_PSW_MODIFY_TIME time not null,
    LAST_BUY_TIME        timestamp not null,
+    CREATE_BY            CHAR(32)             ,
+   CREATE_DATE          TIMESTAMP            ,
+   UPDATE_BY            CHAR(32),
+   UPDATE_DATE          TIMESTAMP,
+   LAST_MODIFIED_BY     CHAR(32),
+   LAST_MODIFIED_DATE   time,
    primary key (ID)
 )
 drop table if exists SYS_ROLE;

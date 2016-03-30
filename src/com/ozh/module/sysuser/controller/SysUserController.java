@@ -6,6 +6,9 @@ import com.ozh.core.entity.SysUser;
 import com.ozh.core.service.SysUserService;
 import com.ozh.utils.SpringContextHolder;
 import com.ozh.web.WebContextFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.ParseException;
 import java.util.List;
 
 @Controller
@@ -93,6 +97,17 @@ public class SysUserController {
 		//登陆时有将lastLoginTime放入session，离开时需要remove
 //		WebContextFactory.getWebContext().removeSessionAttr(Global.FRONT_USER_LAST_LOGIN_TIME);
 		return "redirect:/index.ac";
+	}
+	/**
+	 * 列表
+	 */
+	@RequestMapping(value = "/findUserList",method = RequestMethod.GET)
+	@ResponseBody
+	public Object findUserList(ModelMap model, Integer offset, Integer limit,String search,Pageable pageable) throws  BusinessException, ParseException {
+		PageRequest pageRequest = new PageRequest(offset,limit,pageable.getSort());
+		Page page = getSysUserService().findUserList(pageRequest,search);
+		return  new PageImpl<SysUser>(page.getContent(),pageable,page.getTotalElements());
+
 	}
 
 }
