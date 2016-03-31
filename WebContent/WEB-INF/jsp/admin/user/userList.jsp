@@ -67,7 +67,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               <div id="toolbar" class="btn-group">
-                <button id="btn_add" type="button" class="btn btn-default" >
+                <button id="btn_add" type="button" class="btn btn-default" data-toggle="modal" data-target="#gridSystemModal" >
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
                 </button>
                 <button id="btn_edit" type="button" class="btn btn-default">
@@ -127,7 +127,10 @@
     </section>
     <!-- /.content -->
   </div>
-
+  <!-- Modal -->
+   <div class="modal fade" role="dialog" id="gridSystemModal">
+       <jsp:include page="user-add.jsp"/>
+   </div><!-- /.modal -->
   <jsp:include page="../footer.jsp"/>
 </div>
 </body>
