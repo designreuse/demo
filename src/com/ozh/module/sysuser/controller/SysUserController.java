@@ -33,18 +33,6 @@ public class SysUserController {
 		return null;
 	}
 
-	@RequestMapping(value = "/saveOrUpdate",method = RequestMethod.POST)
-	@ResponseBody
-	public Object saveOrUpdate(){
-
-		SysUser sysUser = new SysUser();
-		sysUser.setUserName("ozh");
-		sysUser.setUserPsw("asdqwe");
-		getSysUserService().save(sysUser);
-		System.out.println(sysUser);
-
-		return null;
-	}
 
 	@RequestMapping(value = "/delete",method = RequestMethod.POST)
 	@ResponseBody
@@ -108,6 +96,15 @@ public class SysUserController {
 		Page page = getSysUserService().findUserList(pageRequest,search);
 		return  new PageImpl<SysUser>(page.getContent(),pageable,page.getTotalElements());
 
+	}
+
+	@RequestMapping(value = "/addSysUser",method = RequestMethod.POST)
+	@ResponseBody
+	public Object addSysUser(ModelMap model,SysUser sysUser){
+
+		System.out.println(sysUser);
+
+		return null;
 	}
 
 }

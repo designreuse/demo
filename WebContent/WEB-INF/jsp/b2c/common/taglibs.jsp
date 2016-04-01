@@ -7,3 +7,4 @@
 <%
 request.setAttribute("ctx",session.getServletContext().getContextPath());
 %>
+<c:set value="${pageContext.request.contextPath}" var="webRoot" />

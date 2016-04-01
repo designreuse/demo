@@ -44,6 +44,8 @@ public class SysUserRepositoryImpl implements SysUserRepositoryCustom{
             paramMap.put(SysUser.USER_TEL, "%" + search + "%");
             paramMap.put(SysUser.USER_EMAIL, "%" + search + "%");
         }
+        sql.append(" AND a.IS_DELETE LIKE :isDelete");
+        paramMap.put(SysUser.IS_DELETE,  "N");
         int pageSize = pageable.getPageSize();
         int firstIdx = pageable.getPageNumber() * pageSize;
         Long total = new NamedParameterJdbcTemplate(this.jdbcTemplate).queryForObject("select count(*)"+ sql, paramMap, Long.class);

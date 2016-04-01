@@ -31,11 +31,16 @@
   <script src="${ctx}static/adminLTE/plugins/bootstrap-table/bootstrap-table.js"></script>
   <script src="${ctx}static/adminLTE/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
 
-
+  <script src="${ctx}static/js/angular.min.js"></script>
   <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
   <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
   <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
   <script src="${ctx}static/js/user/userList.js"></script>
+  <script>
+    var dataValue={
+      webRoot:"${webRoot}" //当前路径
+    };
+  </script>
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -98,19 +103,20 @@
                       >
                 <thead>
                 <tr>
-                  <th data-field="id"  data-checkbox="true"></th>
+                  <th data-field="listId"  data-checkbox="true"></th>
+                  <th data-field="id"  data-sortable="true">用户Id</th>
                   <th data-field="loginId" data-sortable="true">登陆账号</th>
-                  <th data-field="isAdmin" data-sortable="true">是否是管理员</th>
+                  <th data-field="isAdmin" data-sortable="true" data-formatter="isAdmin" >是否是管理员</th>
                   <th data-field="userName" data-sortable="true">名称</th>
                   <th data-field="userPsw" data-sortable="true">密码</th>
                   <th data-field="userMobile" data-sortable="true">手机</th>
                   <th data-field="userTel" data-sortable="true">电话</th>
-                  <th data-field="userSexCode" data-sortable="true">性别</th>
+                  <th data-field="userSexCode" data-sortable="true" data-formatter="userSexCode">性别</th>
                   <th data-field="userEmail" data-sortable="true">邮箱</th>
-                  <th data-field="registerDate" data-sortable="true">注册时间</th>
-                  <th data-field="userIcon" data-sortable="true">头像</th>
-                  <th data-field="lastPswModifyTime" data-sortable="true">最后修改密码时间</th>
-                  <th data-field="LAST_BUY_TIME" data-sortable="true">最后购买时间</th>
+                  <th data-field="registerDateString" data-sortable="true">注册时间</th>
+                  <%--<th data-field="userIcon" data-sortable="true">头像</th>--%>
+                  <th data-field="lastPswModifyTimeString" data-sortable="true">最后修改密码时间</th>
+                  <th data-field="lastBuyTimeString" data-sortable="true">最后购买时间</th>
                 </tr>
                 </thead>
 

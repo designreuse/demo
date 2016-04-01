@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import com.ozh.common.entity.BaseEntity;
+import com.ozh.common.utils.DateTimeUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -227,8 +228,17 @@ public class SysUser extends BaseEntity<Long>{
 		}
 		SysUser other = (SysUser)obj;
 		return new EqualsBuilder()
-			.append(getId(),other.getId())
+			.append(getId(), other.getId())
 			.isEquals();
+	}
+	public String getRegisterDateString() {
+		return DateTimeUtils.convertDateTimeToString(getRegisterDate());
+	}
+	public String getLastPswModifyTimeString() {
+		return DateTimeUtils.convertDateTimeToString(getLastPswModifyTime());
+	}
+	public String getLastBuyTimeString() {
+		return DateTimeUtils.convertDateTimeToString(getLastBuyTime());
 	}
 }
 
