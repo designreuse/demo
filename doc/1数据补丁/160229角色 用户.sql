@@ -25,7 +25,7 @@ create table SYS_USER
    CREATE_DATE          TIMESTAMP            ,
    UPDATE_BY            CHAR(32),
    UPDATE_DATE          TIMESTAMP,
-   LAST_MODIFIED_BY     CHAR(32),
+   LAST_MODIFIED_BY     TIMESTAMP,
    LAST_MODIFIED_DATE   time,
    primary key (ID)
 )

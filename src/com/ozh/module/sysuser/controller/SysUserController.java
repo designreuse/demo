@@ -1,11 +1,13 @@
 package com.ozh.module.sysuser.controller;
 
+import com.ozh.common.Enum.BoolCodeEnum;
 import com.ozh.common.Global;
 import com.ozh.common.utils.BusinessException;
 import com.ozh.core.entity.SysUser;
 import com.ozh.core.service.SysUserService;
 import com.ozh.utils.SpringContextHolder;
 import com.ozh.web.WebContextFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -33,6 +36,22 @@ public class SysUserController {
 		return null;
 	}
 
+	@RequestMapping(value = "/addSysUser",method = RequestMethod.POST)
+	@ResponseBody
+	public Object addSysUser(ModelMap model,SysUser sysUser){
+		SysUser user = new SysUser();
+		BeanUtils.copyProperties(sysUser, user);
+		user.setIsAdmin(BoolCodeEnum.NO.toCode());
+		user.setLastPswModifyTime(new Date());
+		user.setRegisterDate(new Date());
+		user.setLastBuyTime(new Date());
+		user.setCreateDate(new Date());
+		user.setUpdateDate(new Date());
+
+		SpringContextHolder.getBean(SysUserService.class).save(user);
+		model.put(SUCCESS, true);
+		return model;
+	}
 
 	@RequestMapping(value = "/delete",method = RequestMethod.POST)
 	@ResponseBody
@@ -96,15 +115,6 @@ public class SysUserController {
 		Page page = getSysUserService().findUserList(pageRequest,search);
 		return  new PageImpl<SysUser>(page.getContent(),pageable,page.getTotalElements());
 
-	}
-
-	@RequestMapping(value = "/addSysUser",method = RequestMethod.POST)
-	@ResponseBody
-	public Object addSysUser(ModelMap model,SysUser sysUser){
-
-		System.out.println(sysUser);
-
-		return null;
 	}
 
 }

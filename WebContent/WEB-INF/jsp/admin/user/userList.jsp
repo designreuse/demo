@@ -36,10 +36,11 @@
   <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
   <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
   <script src="${ctx}static/js/user/userList.js"></script>
-  <script>
-    var dataValue={
-      webRoot:"${webRoot}" //当前路径
-    };
+  <script src="${ctx}static/js/user/userAdd.js"></script>
+  <script src="${ctx}static/js/jquery.md5.js"></script>
+  <script src="${ctx}static/js/jquery.form.js"></script>
+  <script type="text/javascript">
+    var webPath = {webRoot:"${webRoot}"};
   </script>
 
 </head>
@@ -51,14 +52,14 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Data Tables
-        <small>advanced tables</small>
+       用户管理
+        <small>user management</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li class="active">Data tables</li>
-      </ol>
+      <%--<ol class="breadcrumb">--%>
+        <%--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--%>
+        <%--<li><a href="#">Tables</a></li>--%>
+        <%--<li class="active">Data tables</li>--%>
+      <%--</ol>--%>
     </section>
 
     <!-- Main content -->
@@ -71,11 +72,11 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div id="toolbar" class="btn-group">
-                <button id="btn_add" type="button" class="btn btn-default" data-toggle="modal" data-target="#gridSystemModal" >
+              <div  class="btn-group">
+                <button id="btn_add" type="button" class="btn btn-default" data-toggle="modal" data-target="#addSysUserModal" >
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
                 </button>
-                <button id="btn_edit" type="button" class="btn btn-default">
+                <button id="btn_edit" type="button" class="btn btn-default" >
                   <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
                 </button>
                 <button id="btn_delete" type="button" class="btn btn-default">
@@ -83,11 +84,10 @@
                 </button>
               </div>
               <table data-toggle="table"
-                      id="userList"
+                     id="userList"
                      class="table table-bordered table-striped"
                      data-url="${ctx}/sysUser/findUserList.json"
                      data-search="true"
-                     data-click-to-select="true"
                      data-show-refresh="true"
                      data-show-toggle="true"
                      data-side-pagination="server"
@@ -99,7 +99,8 @@
                      data-query-params-type='limit'
                      data-pagination="true"
                      data-uniqueId="ID"
-                      data-toolbar="#toolbar"
+                     data-click-to-select="true"
+                     data-single-select="true"
                       >
                 <thead>
                 <tr>
@@ -134,7 +135,7 @@
     <!-- /.content -->
   </div>
   <!-- Modal -->
-   <div class="modal fade" role="dialog" id="gridSystemModal">
+   <div class="modal fade" role="dialog" id="addSysUserModal">
        <jsp:include page="user-add.jsp"/>
    </div><!-- /.modal -->
   <jsp:include page="../footer.jsp"/>

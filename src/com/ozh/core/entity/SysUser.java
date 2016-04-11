@@ -34,8 +34,10 @@ public class SysUser extends BaseEntity<Long>{
 	public static final String IS_DELETE = "isDelete";
 	public static final String LAST_PSW_MODIFY_TIME = "lastPswModifyTime";
 	public static final String LAST_BUY_TIME = "lastBuyTime";
+	public static final String UPDATE_DATE = "updateDate";
 
-    /** LOGIN_ID - loginId */
+
+	/** LOGIN_ID - loginId */
     @Column(name = "LOGIN_ID", unique = false, nullable = false, insertable = true, updatable = true, length = 32)
     private String loginId;
     /** IS_ADMIN - isAdmin */
@@ -77,6 +79,10 @@ public class SysUser extends BaseEntity<Long>{
     /** LAST_BUY_TIME - lastBuyTime */
     @Column(name = "LAST_BUY_TIME", unique = false, nullable = false, insertable = true, updatable = true, length = 0)
     private java.util.Date lastBuyTime;
+
+	/** UPDATE_DATE - updateDate */
+	@Column(name = "UPDATE_DATE", unique = false, nullable = false, insertable = true, updatable = true, length = 0)
+	private java.util.Date updateDate;
 
     public void setLoginId(String value) {
 		this.loginId = value;
@@ -209,7 +215,13 @@ public class SysUser extends BaseEntity<Long>{
 			.append("LAST_BUY_TIME",getLastBuyTime())
 			.toString();
 	}
-	
+	public void setUpdateDate(java.util.Date value) {
+		this.updateDate = value;
+	}
+
+	public java.util.Date getUpdateDate() {
+		return this.updateDate;
+	}
 	public int hashCode() {
 		return new HashCodeBuilder()
 			.append(getId())
