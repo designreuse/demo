@@ -8,7 +8,7 @@
       </div>
       <form  w5c-form-validate="validateOptions" novalidate name="validateForm" id="validateForm" class="form-horizontal  w5c-form">
         <div class="modal-body">
-
+          <input type="hidden" name="id" id="id" >
           <div class="form-group">
             <label class="control-label col-md-3" for="alterLoginId"><span style='color:red'>*</span>&nbsp;登录账号：</label>
             <div class="col-md-6">
@@ -67,7 +67,7 @@
 
         </div>
       <div class="modal-footer">
-        <button type="submit" w5c-form-submit="submit()" id="submit" onclick="addSysUserForm()" value="Submit" class="btn btn-primary">保存</button>
+        <button type="submit" id="submit" onclick="addSysUserForm()" value="Submit" class="btn btn-primary">保存</button>
         <button type="button" class="btn btn-default ngdialog-custom-close" data-dismiss="modal">关闭</button>
       </div>
     </form>

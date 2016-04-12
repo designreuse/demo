@@ -30,10 +30,10 @@ public class SysUserController {
 	private final static String SUCCESS = "success";
 
 
-	@RequestMapping(value = "/findOne",method = RequestMethod.GET)
+	@RequestMapping(value = "/findOne",method = RequestMethod.POST)
 	@ResponseBody
 	public Object findOne(Long id){
-		return null;
+		return 	SpringContextHolder.getBean(SysUserService.class).findOne(id);
 	}
 
 	@RequestMapping(value = "/addSysUser",method = RequestMethod.POST)
@@ -52,6 +52,23 @@ public class SysUserController {
 		model.put(SUCCESS, true);
 		return model;
 	}
+	@RequestMapping(value = "/updateSysUser",method = RequestMethod.POST)
+	@ResponseBody
+	public Object updateSysUser(ModelMap model,SysUser sysUser){
+		SysUser user = new SysUser();
+		BeanUtils.copyProperties(sysUser, user);
+		user.setIsAdmin(BoolCodeEnum.NO.toCode());
+		user.setLastPswModifyTime(new Date());
+		user.setRegisterDate(new Date());
+		user.setLastBuyTime(new Date());
+		user.setCreateDate(new Date());
+		user.setUpdateDate(new Date());
+
+//		SpringContextHolder.getBean(SysUserService.class).(user);
+		model.put(SUCCESS, true);
+		return model;
+	}
+
 
 	@RequestMapping(value = "/delete",method = RequestMethod.POST)
 	@ResponseBody

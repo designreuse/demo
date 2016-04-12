@@ -6,6 +6,7 @@ $(document).ready(function(){
 });
 
 var addSysUserForm = function(){
+    alert("s");
     //if(!checnLoginId()){
     //    return false;
     //}
@@ -32,9 +33,6 @@ var addSysUserForm = function(){
                 $("userList").bootstrapTable('refresh', {url: webPath.webRoot+'/sysUser/findUserList.json'});
             }
             else{
-                setTimeout(function(){
-                    window.location.href=webPath.webRoot+"/registerSuccess.ac";
-                },1)
 
             }
         },
@@ -43,6 +41,43 @@ var addSysUserForm = function(){
         }
     });
 };
+var updateSysUserForm = function(){
+    //if(!checnLoginId()){
+    //    return false;
+    //}
+    //if(!checkPsw()){
+    //    return false;
+    //}
+    //if(!cheCkcheckPsw()){
+    //    return false;
+    //}
+    //if(!checkUserMailValidate()){//邮箱验证
+    //    return false;
+    //}
+    var params = $("#validateForm").formToArray();
+//    params[5]={name:'mobilePhone',value:1000000 };
+    $.ajaxSettings['contentType'] = "application/x-www-form-urlencoded; charset=utf-8;";
+    $.ajax({
+        type:"POST",
+        url:webPath.webRoot+"/sysUser/addSysUser.json",
+        data:params,
+        dataType: "json",
+        async: false,//同步
+        success:function(data) {
+            if (data.success == true) {
+                $("userList").bootstrapTable('refresh', {url: webPath.webRoot+'/sysUser/findUserList.json'});
+            }
+            else{
+
+            }
+        },
+        error:function(XMLHttpRequest, textStatus) {
+            alert(result.jsonError.errorText);
+        }
+    });
+};
+
+
 ///**
 // * 检查用户名（为空和是否存在）*/
 //var checnLoginId = function(){
