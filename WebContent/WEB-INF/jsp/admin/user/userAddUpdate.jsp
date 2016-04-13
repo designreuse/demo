@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-  <div class="modal-dialog" ng-app="userAdd" ng-controller="userCtrl">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close ngdialog-custom-close" data-dismiss="modal" aria-label="Close"><span class="ngdialog-custom-close" aria-hidden="true">&times;</span></button>
@@ -67,7 +67,8 @@
 
         </div>
       <div class="modal-footer">
-        <button type="submit" id="submit" onclick="addSysUserForm()" value="Submit" class="btn btn-primary">保存</button>
+        <button type="submit"  onclick="addSysUserForm()" value="Submit" class="btn btn-primary addSysUserForm">保存</button>
+        <button type="submit"  onclick="updateSysUserForm()" value="Submit" class="btn btn-primary updateSysUserForm" style="display: none;">修改</button>
         <button type="button" class="btn btn-default ngdialog-custom-close" data-dismiss="modal">关闭</button>
       </div>
     </form>

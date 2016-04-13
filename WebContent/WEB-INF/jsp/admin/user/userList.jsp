@@ -36,7 +36,7 @@
   <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
   <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
   <script src="${ctx}static/js/user/userList.js"></script>
-  <script src="${ctx}static/js/user/userAdd.js"></script>
+  <script src="${ctx}static/js/user/sysUserAddAndUpdate.js"></script>
   <script src="${ctx}static/js/jquery.md5.js"></script>
   <script src="${ctx}static/js/jquery.form.js"></script>
   <script type="text/javascript">
@@ -136,7 +136,7 @@
   </div>
   <!-- Modal -->
    <div class="modal fade" role="dialog" id="showSysUserModal">
-       <jsp:include page="user-add.jsp"/>
+       <jsp:include page="userAddUpdate.jsp"/>
    </div>
   <!-- /.modal -->
   <jsp:include page="../footer.jsp"/>

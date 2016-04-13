@@ -41,6 +41,10 @@ create table SYS_ROLE
    ROLE_TYPE_CODE       enum('0','1') not null,
    POSITION             int not null,
    SCORE                int not null,
+   LAST_MODIFIED_BY     varchar(32),
+   LAST_MODIFIED_DATE   time,
+   CREATE_DATE          TIMESTAMP,
+    CREATE_BY            CHAR(32)             ,
    primary key (ID)
 )
 

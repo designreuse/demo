@@ -6,19 +6,7 @@ $(document).ready(function(){
 });
 
 var addSysUserForm = function(){
-    alert("s");
-    //if(!checnLoginId()){
-    //    return false;
-    //}
-    //if(!checkPsw()){
-    //    return false;
-    //}
-    //if(!cheCkcheckPsw()){
-    //    return false;
-    //}
-    //if(!checkUserMailValidate()){//邮箱验证
-    //    return false;
-    //}
+
     var params = $("#validateForm").formToArray();
 //    params[5]={name:'mobilePhone',value:1000000 };
     $.ajaxSettings['contentType'] = "application/x-www-form-urlencoded; charset=utf-8;";
@@ -42,20 +30,7 @@ var addSysUserForm = function(){
     });
 };
 var updateSysUserForm = function(){
-    //if(!checnLoginId()){
-    //    return false;
-    //}
-    //if(!checkPsw()){
-    //    return false;
-    //}
-    //if(!cheCkcheckPsw()){
-    //    return false;
-    //}
-    //if(!checkUserMailValidate()){//邮箱验证
-    //    return false;
-    //}
     var params = $("#validateForm").formToArray();
-//    params[5]={name:'mobilePhone',value:1000000 };
     $.ajaxSettings['contentType'] = "application/x-www-form-urlencoded; charset=utf-8;";
     $.ajax({
         type:"POST",

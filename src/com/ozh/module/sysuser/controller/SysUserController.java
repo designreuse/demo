@@ -38,7 +38,7 @@ public class SysUserController {
 
 	@RequestMapping(value = "/addSysUser",method = RequestMethod.POST)
 	@ResponseBody
-	public Object addSysUser(ModelMap model,SysUser sysUser){
+	public Object addSysUser(SysUser sysUser){
 		SysUser user = new SysUser();
 		BeanUtils.copyProperties(sysUser, user);
 		user.setIsAdmin(BoolCodeEnum.NO.toCode());
@@ -49,6 +49,7 @@ public class SysUserController {
 		user.setUpdateDate(new Date());
 
 		SpringContextHolder.getBean(SysUserService.class).save(user);
+		ModelMap model = new ModelMap();
 		model.put(SUCCESS, true);
 		return model;
 	}
@@ -57,11 +58,13 @@ public class SysUserController {
 	public Object updateSysUser(ModelMap model,SysUser sysUser){
 		SysUser user = new SysUser();
 		BeanUtils.copyProperties(sysUser, user);
-		user.setIsAdmin(BoolCodeEnum.NO.toCode());
+		if(sysUser.getId()==null) {
+			user.setIsAdmin(BoolCodeEnum.NO.toCode());
+			user.setRegisterDate(new Date());
+			user.setLastBuyTime(new Date());
+			user.setCreateDate(new Date());
+		}
 		user.setLastPswModifyTime(new Date());
-		user.setRegisterDate(new Date());
-		user.setLastBuyTime(new Date());
-		user.setCreateDate(new Date());
 		user.setUpdateDate(new Date());
 
 //		SpringContextHolder.getBean(SysUserService.class).(user);
@@ -72,24 +75,16 @@ public class SysUserController {
 
 	@RequestMapping(value = "/delete",method = RequestMethod.POST)
 	@ResponseBody
-	public  Object delete(@RequestBody List<Long> ids){
-		return null;
-	}
-
-
-
-	@RequestMapping(value = "/register",method = RequestMethod.POST)
-	@ResponseBody
-	public  Object registerUserFrom(ModelMap model,SysUser sysUser)
-	{
-		sysUser.setUserName("ozh");
-		sysUser.setLoginId("XX");
-		sysUser.setUserPsw("asdqwe");
-		SysUser sysUser1 = SpringContextHolder.getBean(SysUserService.class).registerUser(sysUser);
-		model.put(SUCCESS,true);
-		model.put("user",sysUser1);
+	public  Object delete(Long id){
+		SpringContextHolder.getBean(SysUserService.class).delete(id);
+		ModelMap model = new ModelMap();
+		model.put(SUCCESS, true);
 		return model;
 	}
+
+
+
+
 	@RequestMapping(value = "/login",method = RequestMethod.POST)
 	@ResponseBody
 	public  Object login(ModelMap model,String loginId,String password)
@@ -109,6 +104,30 @@ public class SysUserController {
 		return SpringContextHolder.getBean(SysUserService.class);
 	}
 
+
+	/**
+	 * 列表
+	 */
+	@RequestMapping(value = "/findUserList",method = RequestMethod.GET)
+	@ResponseBody
+	public Object findUserList(Integer offset, Integer limit,String search,Pageable pageable) throws  BusinessException, ParseException {
+		PageRequest pageRequest = new PageRequest(offset/limit,limit,pageable.getSort());
+		Page page = getSysUserService().findUserList(pageRequest,search);
+		return  new PageImpl<SysUser>(page.getContent(),pageable,page.getTotalElements());
+
+	}
+	@RequestMapping(value = "/register",method = RequestMethod.POST)
+	@ResponseBody
+	public  Object registerUserFrom(ModelMap model,SysUser sysUser)
+	{
+		sysUser.setUserName("ozh");
+		sysUser.setLoginId("XX");
+		sysUser.setUserPsw("asdqwe");
+		SysUser sysUser1 = SpringContextHolder.getBean(SysUserService.class).registerUser(sysUser);
+		model.put(SUCCESS,true);
+		model.put("user",sysUser1);
+		return model;
+	}
 	/**
 	 * 退出
 	 * @param model
@@ -122,17 +141,5 @@ public class SysUserController {
 //		WebContextFactory.getWebContext().removeSessionAttr(Global.FRONT_USER_LAST_LOGIN_TIME);
 		return "redirect:/index.ac";
 	}
-	/**
-	 * 列表
-	 */
-	@RequestMapping(value = "/findUserList",method = RequestMethod.GET)
-	@ResponseBody
-	public Object findUserList(ModelMap model, Integer offset, Integer limit,String search,Pageable pageable) throws  BusinessException, ParseException {
-		PageRequest pageRequest = new PageRequest(offset,limit,pageable.getSort());
-		Page page = getSysUserService().findUserList(pageRequest,search);
-		return  new PageImpl<SysUser>(page.getContent(),pageable,page.getTotalElements());
-
-	}
-
 }
 

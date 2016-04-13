@@ -1,20 +1,17 @@
 $(document).ready(function(){
-    var $table = $('#userList');
+    var $table = $('#roleList');
     var $button_add = $('#btn_add');
     var $button_edit = $('#btn_edit');
     $button_add.click(function(){
-        $("#showSysUserModal").removeData("modal");
-        $('#showSysUserModal').modal('show');
+        $("#showSysRoleModal").removeData("modal");
+        $('#showSysRoleModal').modal('show');
         $(".addSysUserForm").show();
         $(".updateSysUserForm").hide();
 
-        $(".modal-title").html("添加用户");
+        $(".modal-title").html("新增用户角色");
         $("#id").val("");
-        $("#alterLoginId").val("");
-        $("#alterUserName").val("");
-        $("#alterUserPsw").val("");
-        $("#alterUserMobile").val("");
-        $("#alterUserEmail").val("");
+        $("#alterSysRoleNm").val("");
+        $("#alterPosition").val("");
     });
 
 
@@ -25,35 +22,22 @@ $(document).ready(function(){
             return;
         }
         var id =  $table.bootstrapTable('getSelections')[0].id;
-
         $.ajax({
             type:"POST",
-            url:webPath.webRoot+"/sysUser/findOne.json",
+            url:webPath.webRoot+"/sysRole/findOne.json",
             data:{id:id},
             dataType: "json",
             async: false,//同步
             success:function(data) {
-                $('#showSysUserModal').modal('show');
-                $(".addSysUserForm").hide();
-                $(".updateSysUserForm").show();
+                $('#showSysRoleModal').modal('show');
+                $(".addSysRoleForm").hide();
+                $(".updateSysRoleForm").show();
 
-                $(".modal-title").html("修改用户");
+                $(".modal-title").html("修改用户角色");
                 $("#id").val(data.id);
-                $("#alterLoginId").val(data.loginId);
-                $("#alterUserName").val(data.userName);
-                $("#alterUserPsw").val(data.userPsw);
-                $("#alterUserMobile").val(data.userMobile);
-                $("#alterUserEmail").val(data.userEmail);
-                $("input[name='userSexCode']").each(function(){
-                    if($(this).val()==data.userSexCode){
-                        $(this).attr("checked",true);
-                    }
-                });
-                $("input[name='isDelete']").each(function(){
-                    if($(this).val()==data.isDelete){
-                        $(this).attr("checked",true);
-                    }
-                })
+
+                $("#alterSysRoleNm").val(data.sysRoleNm);
+                $("#alterPosition").val(data.position);
             },
             error:function(XMLHttpRequest, textStatus) {
                 alert(result.jsonError.errorText);
@@ -70,12 +54,12 @@ $(document).ready(function(){
         var id =  $table.bootstrapTable('getSelections')[0].id;
         $.ajax({
             type:"POST",
-            url:webPath.webRoot+"/sysUser/delete.json",
+            url:webPath.webRoot+"/sysRole/delete.json",
             data:{id:id},
             dataType: "json",
             success:function(data) {
                 if (data.success == true) {
-                    $("#userList").bootstrapTable('refresh', {url: webPath.webRoot+'/sysUser/findUserList.json'});
+                    $("#roleList").bootstrapTable('refresh', {url: webPath.webRoot+'/sysRole/findSysRoleList.json'});
                 }
                 else{
 

@@ -8,7 +8,7 @@
 <html>
 <head>
   <base href="${basePath}">
-  <title>角色列表</title>
+  <title>会员列表</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="${ctx}static/adminLTE/dist/css/AdminLTE.min.css">
@@ -23,7 +23,6 @@
   <!-- Bootstrap 3.3.5 -->
   <script src="${ctx}static/adminLTE/bootstrap/js/bootstrap.min.js"></script>
   <script src="${ctx}static/adminLTE/dist/js/app.min.js"></script>
-  <script src="${ctx}static/js/user/userList.js"></script>
 
   <script src="${ctx}static/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
@@ -32,8 +31,18 @@
   <script src="${ctx}static/adminLTE/plugins/bootstrap-table/bootstrap-table.js"></script>
   <script src="${ctx}static/adminLTE/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
 
-
+  <script src="${ctx}static/js/angular.min.js"></script>
   <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
+  <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
+  <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
+  <script src="${ctx}static/js/role/roleList.js"></script>
+  <script src="${ctx}static/js/role/sysRoleAddAndUpdate.js"></script>
+  <script src="${ctx}static/js/jquery.md5.js"></script>
+  <script src="${ctx}static/js/jquery.form.js"></script>
+  <script type="text/javascript">
+    var webPath = {webRoot:"${webRoot}"};
+  </script>
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -77,27 +86,29 @@
                 </button>
               </div>
               <table data-toggle="table"
-                      id="userList"
+                      id="roleList"
                      class="table table-bordered table-striped"
                      data-url="${ctx}/sysRole/findSysRoleList.json"
-                     data-search="true"
-                     data-click-to-select="true"
-                     data-show-refresh="true"
-                     data-show-toggle="true"
-                     data-side-pagination="server"
-                     data-show-columns="true"
-                     data-sort-name="id"
-                     data-page-list="[5, 10, 10]"
-                     data-page-size="10"
-                     data-show-export="true"
-                     data-query-params-type='limit'
-                     data-pagination="true"
-                     data-uniqueId="ID"
+                      data-search="true"
+                      data-show-refresh="true"
+                      data-show-toggle="true"
+                      data-side-pagination="server"
+                      data-show-columns="true"
+                      data-sort-name="id"
+                      data-page-list="[5, 10, 10]"
+                      data-page-size="10"
+                      data-show-export="true"
+                      data-query-params-type='limit'
+                      data-pagination="true"
+                      data-uniqueId="ID"
+                      data-click-to-select="true"
+                      data-single-select="true"
                       >
                 <thead>
                 <tr>
-                  <th data-field="sysRoleNm" data-sortable="true">角色名称</th>
+                  <th data-field="listId"  data-checkbox="true"></th>
                   <th data-field="position" data-sortable="true">排序</th>
+                  <th data-field="sysRoleNm" data-sortable="true">角色名称</th>
                   <th data-field="score" data-sortable="true">score</th>
                 </tr>
                 </thead>
@@ -115,7 +126,11 @@
     </section>
     <!-- /.content -->
   </div>
-
+  <!-- Modal -->
+  <div class="modal fade" role="dialog" id="showSysRoleModal">
+    <jsp:include page="sysRoleAddAndUpdate.jsp"/>
+  </div>
+  <!-- /.modal -->
   <jsp:include page="../footer.jsp"/>
 </div>
 </body>
