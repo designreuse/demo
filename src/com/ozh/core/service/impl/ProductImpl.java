@@ -7,6 +7,8 @@ import com.ozh.core.repository.ProductRepository;
 import com.ozh.core.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 /**
@@ -20,8 +22,12 @@ public class ProductImpl extends AbstractBaseService<Product, Long> implements P
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@SuppressWarnings("unused")
-    private ProductRepository getSysRoleRepository() {
+    private ProductRepository getProductRepository() {
 		return (ProductRepository) baseRepository;
 	}
 
+	@Override
+	public Page findProductList(Pageable pageable, String search) {
+		return getProductRepository().findProductList(pageable,search);
+	}
 }

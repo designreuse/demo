@@ -41,6 +41,11 @@ public class DemoController {
         return "/admin/role/sysRoleList";
     }
 
+    @RequestMapping(value = "/productUI.html", method = RequestMethod.GET)
+    public String toProducUI() {
+        return "/admin/product/productList";
+    }
+
     @RequestMapping(value = "/bg.html", method = RequestMethod.GET)
     public String tobg() {
         return "/admin/common/bg";

@@ -1,10 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/b2c/common/taglibs.jsp"%>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
-    request.setAttribute("basePath", basePath);
-%>
+<%--<script type="application/javascript">--%>
+    <%--$('${param.p}').addClass("active");--%>
+
+<%--</script>--%>
 
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -40,8 +39,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="${ctx}admin/userUI.html"><i class="fa fa-circle-o"></i> 会员列表</a></li>
-                    <li><a href="${ctx}admin/sysRoleUI.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                    <li class="userUI"><a href="${ctx}/admin/userUI.html?p=userUI"><i class="fa fa-circle-o"></i> 会员列表</a></li>
+                    <li class="sysRoleUI"><a href="${ctx}/admin/sysRoleUI.html?p=sysRoleUI"><i class="fa fa-circle-o"></i> 角色管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -51,10 +50,7 @@
                     <span class="label label-primary pull-right">4</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                    <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                    <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                    <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                    <li class="productUI"><a href="${ctx}/admin/productUI.html?p=productUI"><i class="fa fa-circle-o"></i> 商品管理</a></li>
                 </ul>
             </li>
             <li>

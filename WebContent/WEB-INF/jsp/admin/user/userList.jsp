@@ -1,44 +1,39 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/b2c/common/taglibs.jsp"%>
-<%
-  String path = request.getContextPath();
-  String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-  application.setAttribute("basePath",basePath);
-%>
+
 <html>
 <head>
-  <base href="${basePath}">
   <title>会员列表</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="${ctx}static/adminLTE/dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="${ctx}static/adminLTE/dist/css/skins/_all-skins.min.css">
-  <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-  <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/plugins/font-awesome/css/font-awesome.min.css">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="${ctx}static/adminLTE/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/jQuery/jQuery-2.2.0.min.js"></script>
   <!-- Bootstrap 3.3.5 -->
-  <script src="${ctx}static/adminLTE/bootstrap/js/bootstrap.min.js"></script>
-  <script src="${ctx}static/adminLTE/dist/js/app.min.js"></script>
+  <script src="${ctx}/static/adminLTE/bootstrap/js/bootstrap.min.js"></script>
+  <script src="${ctx}/static/adminLTE/dist/js/app.min.js"></script>
 
-  <script src="${ctx}static/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
-  <script src="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
-  <script src="${ctx}static/adminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-  <script src="${ctx}static/adminLTE/plugins/fastclick/fastclick.js"></script>
-  <script src="${ctx}static/adminLTE/plugins/bootstrap-table/bootstrap-table.js"></script>
-  <script src="${ctx}static/adminLTE/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/fastclick/fastclick.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/bootstrap-table/bootstrap-table.js"></script>
+  <script src="${ctx}/static/adminLTE/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
 
-  <script src="${ctx}static/js/angular.min.js"></script>
-  <link rel="stylesheet" href="${ctx}static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
-  <%--<link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/css/bootstrap.css">--%>
-  <link rel="stylesheet" href="${ctx}static/adminLTE/bootstrap/js /bootstrap.js">
-  <script src="${ctx}static/js/user/userList.js"></script>
-  <script src="${ctx}static/js/user/sysUserAddAndUpdate.js"></script>
-  <script src="${ctx}static/js/jquery.md5.js"></script>
-  <script src="${ctx}static/js/jquery.form.js"></script>
+  <script src="${ctx}/static/js/angular.min.js"></script>
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
+  <%--<link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/css/bootstrap.css">--%>
+  <link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/js /bootstrap.js">
+  <script src="${ctx}/static/js/user/userList.js"></script>
+  <script src="${ctx}/static/js/user/sysUserAddAndUpdate.js"></script>
+  <script src="${ctx}/static/js/jquery.md5.js"></script>
+  <script src="${ctx}/static/js/jquery.form.js"></script>
   <script type="text/javascript">
     var webPath = {webRoot:"${webRoot}"};
   </script>

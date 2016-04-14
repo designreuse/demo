@@ -3,7 +3,7 @@ drop table if exists PRD_PRODUCT;
 /*==============================================================*/
 /* Table: PRD_PRODUCT3                                          */
 /*==============================================================*/
-create table PRODUCT
+create table PRD_PRODUCT
 (
    ID          bigint not null auto_increment,
    PRODUCT_NM           varchar(255) not null,
@@ -20,5 +20,9 @@ create table PRODUCT
    LAST_MOD_TIME        timestamp not null,
    IS_INSTALLMENT       enum('Y','N'),
    IS_SUPPORT_COD       enum('Y','N'),
+   LAST_MODIFIED_BY     varchar(32),
+   LAST_MODIFIED_DATE   time,
+   CREATE_DATE          TIMESTAMP,
+    CREATE_BY            CHAR(32)             ,
    primary key (ID)
 );
