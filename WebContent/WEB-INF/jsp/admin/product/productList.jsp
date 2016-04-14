@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="${ctx}/static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
   <%--<link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/css/bootstrap.css">--%>
   <link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/js /bootstrap.js">
-  <script src="${ctx}/static/js/user/productList.js"></script>
-  <script src="${ctx}/static/js/user/sysUserAddAndUpdate.js"></script>
+  <script src="${ctx}/static/js/product/productList.js"></script>
+  <script src="${ctx}/static/js/product/sysUserAddAndUpdate.js"></script>
   <script src="${ctx}/static/js/jquery.md5.js"></script>
   <script src="${ctx}/static/js/jquery.form.js"></script>
   <script type="text/javascript">
@@ -48,7 +48,7 @@
     <section class="content-header">
       <h1>
        商品管理
-        <small>user management</small>
+        <small>product management</small>
       </h1>
       <%--<ol class="breadcrumb">--%>
         <%--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--%>
@@ -100,19 +100,16 @@
                 <thead>
                 <tr>
                   <th data-field="listId"  data-checkbox="true"></th>
-                  <th data-field="id"  data-sortable="true">用户Id</th>
-                  <th data-field="loginId" data-sortable="true">登陆账号</th>
-                  <th data-field="isAdmin" data-sortable="true" data-formatter="isAdmin" >是否是管理员</th>
-                  <th data-field="userName" data-sortable="true">名称</th>
-                  <th data-field="userPsw" data-sortable="true">密码</th>
-                  <th data-field="userMobile" data-sortable="true">手机</th>
-                  <th data-field="userTel" data-sortable="true">电话</th>
-                  <th data-field="userSexCode" data-sortable="true" data-formatter="userSexCode">性别</th>
-                  <th data-field="userEmail" data-sortable="true">邮箱</th>
-                  <th data-field="registerDateString" data-sortable="true">注册时间</th>
-                  <%--<th data-field="userIcon" data-sortable="true">头像</th>--%>
-                  <th data-field="lastPswModifyTimeString" data-sortable="true">最后修改密码时间</th>
-                  <th data-field="lastBuyTimeString" data-sortable="true">最后购买时间</th>
+                  <th data-field="id"  data-sortable="true">商品Id</th>
+                  <th data-field="productNm" data-sortable="true">商品名称</th>
+                  <th data-field="sellingPoint" data-sortable="true">卖点</th>
+                  <th data-field="productCoding" data-sortable="true">商品编码</th>
+                  <th data-field="productTag" data-sortable="true">商品图标</th>
+                  <th data-field="isOnSale" data-sortable="true">是否销售</th>
+                  <th data-field="marketPrice" data-sortable="true">市场价</th>
+                  <th data-field="productDescr" data-sortable="true">商品描述</th>
+                  <th data-field="isDelete" data-sortable="true">是否删除</th>
+                  <th data-field="position" data-sortable="true">排序</th>
                 </tr>
                 </thead>
 
@@ -130,9 +127,9 @@
     <!-- /.content -->
   </div>
   <!-- Modal -->
-   <%--<div class="modal fade" role="dialog" id="showSysUserModal">--%>
-       <%--<jsp:include page="userAddUpdate.jsp"/>--%>
-   <%--</div>--%>
+   <div class="modal fade" role="dialog" id="showProductModal">
+       <jsp:include page="productAddAndUpdate.jsp"/>
+   </div>
   <!-- /.modal -->
   <jsp:include page="../footer.jsp"/>
 </div>
