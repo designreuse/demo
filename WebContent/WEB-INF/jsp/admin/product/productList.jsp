@@ -29,9 +29,12 @@
   <script src="${ctx}/static/js/angular.min.js"></script>
   <link rel="stylesheet" href="${ctx}/static/adminLTE/plugins/datatables/dataTables.bootstrap.css">
   <%--<link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/css/bootstrap.css">--%>
+
+  <link rel="stylesheet" href="${ctx}/static/css/productAddAndUpdate.css">
+
   <link rel="stylesheet" href="${ctx}/static/adminLTE/bootstrap/js /bootstrap.js">
   <script src="${ctx}/static/js/product/productList.js"></script>
-  <script src="${ctx}/static/js/product/sysUserAddAndUpdate.js"></script>
+  <script src="${ctx}/static/js/product/productAddAndUpdate.js"></script>
   <script src="${ctx}/static/js/jquery.md5.js"></script>
   <script src="${ctx}/static/js/jquery.form.js"></script>
   <script type="text/javascript">
@@ -101,15 +104,21 @@
                 <tr>
                   <th data-field="listId"  data-checkbox="true"></th>
                   <th data-field="id"  data-sortable="true">商品Id</th>
+                  <th data-field="imageFile"  data-sortable="true" data-formatter="imageFile">图片</th>
                   <th data-field="productNm" data-sortable="true">商品名称</th>
                   <th data-field="sellingPoint" data-sortable="true">卖点</th>
                   <th data-field="productCoding" data-sortable="true">商品编码</th>
-                  <th data-field="productTag" data-sortable="true">商品图标</th>
-                  <th data-field="isOnSale" data-sortable="true">是否销售</th>
+                  <th data-field="productTag" data-sortable="true">商品标签</th>
+                  <th data-field="isOnSale" data-sortable="true" data-formatter="isOnSale">是否销售</th>
                   <th data-field="marketPrice" data-sortable="true">市场价</th>
-                  <th data-field="productDescr" data-sortable="true">商品描述</th>
-                  <th data-field="isDelete" data-sortable="true">是否删除</th>
+                  <%--<th data-field="productDescr" data-sortable="true">商品描述</th>--%>
+                  <%--<th data-field="isDelete" data-sortable="true">是否删除</th>--%>
                   <th data-field="position" data-sortable="true">排序</th>
+                  <th data-field="salesVolume" data-sortable="true">销量</th>
+                  <th data-field="lastOnSaleDateString" data-sortable="true">最后上架日期</th>
+                  <th data-field="lastModTimeString" data-sortable="true">最后修改时间</th>
+                  <%--<th data-field="isInstallment" data-sortable="true">是否分期</th>--%>
+                  <%--<th data-field="isSupportCod" data-sortable="true">是否支持货到付款</th>--%>
                 </tr>
                 </thead>
 

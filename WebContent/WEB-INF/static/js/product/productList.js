@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var $table = $('#roleList');
+    var $table = $('#productList');
     var $button_add = $('#btn_add');
     var $button_edit = $('#btn_edit');
     $button_add.click(function(){
@@ -33,10 +33,22 @@ $(document).ready(function(){
                 $(".addSysRoleForm").hide();
                 $(".updateSysRoleForm").show();
 
-                $(".modal-title").html("修改用户角色");
+                $(".modal-title").html("修改商品");
                 $("#id").val(data.id);
 
-                $("#alterSysRoleNm").val(data.sysRoleNm);
+                $("#alterProductNm").val(data.productNm);
+                $("#alterSellingPoint").val(data.sellingPoint);
+                $("#alterProductCoding").val(data.productCoding);
+                $("#alterProductTag").val(data.productTag);
+                $("#alterMarketPrice").val(data.marketPrice);
+
+                $("input[name='isOnSale']").each(function(){
+                    if($(this).val()==data.isOnSale){
+                        $(this).attr("checked",true);
+                    }
+                })
+
+
                 $("#alterPosition").val(data.position);
             },
             error:function(XMLHttpRequest, textStatus) {
@@ -59,7 +71,7 @@ $(document).ready(function(){
             dataType: "json",
             success:function(data) {
                 if (data.success == true) {
-                    $("#roleList").bootstrapTable('refresh', {url: webPath.webRoot+'/product/findProductList.json'});
+                    $("#productList").bootstrapTable('refresh', {url: webPath.webRoot+'/product/findProductList.json'});
                 }
                 else{
 
@@ -72,17 +84,12 @@ $(document).ready(function(){
 
     });
 });
-var userSexCode = function(value,rows){
-    switch(value) {
-        case '0':
-            return '男';
-        case '1':
-            return '女';
-        case '2':
-            return '保密';
-    }
+var imageFile = function(value,rows){
+    return "<img src="+webPath.webRoot+"/upload/temp/"+value+"/>";
+
 };
-var isAdmin = function(value,rows){
+
+var isOnSale = function(value,rows){
     switch(value) {
         case 'Y':
             return '是';

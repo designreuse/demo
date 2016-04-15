@@ -15,4 +15,7 @@ public interface Global {
 
     public static final String ADMIN = "admin_user";
 
+    public static final String UPLOAD_DIR="upload";
+
+
 }

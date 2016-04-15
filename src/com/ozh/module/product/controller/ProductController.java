@@ -1,5 +1,6 @@
 package com.ozh.module.product.controller;
 
+import com.ozh.common.Enum.BoolCodeEnum;
 import com.ozh.common.utils.BusinessException;
 import com.ozh.core.entity.Product;
 import com.ozh.core.entity.SysRole;
@@ -37,18 +38,29 @@ public class ProductController {
 		return  new PageImpl<SysRole>(page.getContent(),pageable,page.getTotalElements());
 
 	}
-	@RequestMapping(value = "/saveOrUpdateSysRole",method = RequestMethod.POST)
+	@RequestMapping(value = "/saveOrUpdateProduct",method = RequestMethod.POST)
 	@ResponseBody
-	public Object saveOrUpdateSysRole(Product product){
+	public Object saveOrUpdateProduct(Product product){
 		Product product1 = new Product();
+		Product mysqlProduct = null;
 		BeanUtils.copyProperties(product, product1);
 		if(product1.getId()==null) {
 			product1.setCreateDate(new Date());
+			product1.setSalesVolume(0);
+		}else {
+			mysqlProduct = getProductService().findOne(product.getId());
+			product1.setSalesVolume(mysqlProduct.getSalesVolume());
 		}
+		if(BoolCodeEnum.YES.toCode().equals(product.getIsOnSale())){
+			product1.setLastModTime(new Date());
+		}else {
+			product1.setLastModTime(mysqlProduct.getLastOnSaleDate());
+		}
+		product1.setProductDescr("这功能暂时不做".getBytes());
+		product1.setIsDelete(BoolCodeEnum.NO.toCode());
+		product1.setLastModifiedDate(new Date());
 		getProductService().save(product1);
-		ModelMap model = new ModelMap();
-		model.put(SUCCESS, true);
-		return model;
+		return SUCCESS;
 	}
 
 	@RequestMapping(value = "/delete",method = RequestMethod.POST)

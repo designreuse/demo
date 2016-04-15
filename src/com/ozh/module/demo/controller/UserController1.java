@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 @RequestMapping(value = "user")
-public class UserController {
+public class UserController1 {
 
     /***
      * 用户登陆

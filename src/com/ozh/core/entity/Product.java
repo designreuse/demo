@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import com.ozh.common.entity.BaseEntity;
+import com.ozh.common.utils.DateTimeUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -76,6 +77,10 @@ public class Product extends BaseEntity<Long>{
     /** IS_SUPPORT_COD - isSupportCod */
     @Column(name = "IS_SUPPORT_COD", unique = false, nullable = true, insertable = true, updatable = true, length = 2)
     private String isSupportCod;
+
+	/** IMAGE_FILE - imageFile */
+	@Column(name = "IMAGE_FILE", unique = false, nullable = true, insertable = true, updatable = true, length = 255)
+	private String imageFile;
 
     public void setProductNm(String value) {
 		this.productNm = value;
@@ -189,6 +194,14 @@ public class Product extends BaseEntity<Long>{
 		return this.isSupportCod;
 	}
 
+	public String getImageFile() {
+		return imageFile;
+	}
+
+	public void setImageFile(String imageFile) {
+		this.imageFile = imageFile;
+	}
+
 	public String toString() {
 		return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
 			.append("ID",getId())
@@ -205,7 +218,7 @@ public class Product extends BaseEntity<Long>{
 			.append("LAST_ON_SALE_DATE",getLastOnSaleDate())
 			.append("LAST_MOD_TIME",getLastModTime())
 			.append("IS_INSTALLMENT",getIsInstallment())
-			.append("IS_SUPPORT_COD",getIsSupportCod())
+			.append("IS_SUPPORT_COD", getIsSupportCod())
 			.toString();
 	}
 	
@@ -229,6 +242,12 @@ public class Product extends BaseEntity<Long>{
 		return new EqualsBuilder()
 			.append(getId(),other.getId())
 			.isEquals();
+	}
+	public String getLastOnSaleDateString() {
+		return DateTimeUtils.convertDateTimeToString(getLastOnSaleDate());
+	}
+	public String getLastModTimeString() {
+		return DateTimeUtils.convertDateTimeToString(getLastModTime());
 	}
 }
 
