@@ -88,6 +88,27 @@
         <!--<dispatcher>INCLUDE</dispatcher>-->
     <!--</filter-mapping>-->
 
+    <filter>
+        <filter-name>WeixinAutoLoginFilter</filter-name>
+        <filter-class>com.ozh.web.filter.WeixinAutoLoginFilter</filter-class>
+        <init-param>
+            <description>加载的URL</description>
+            <param-name>includeUrls</param-name>
+            <param-value>
+                */wap/*;
+            </param-value>
+        </init-param>
+        <init-param>
+            <description>不验证的URL</description>
+            <param-name>excludeUrls</param-name>
+            <param-value>*.js;*.css;*.jpg;*.gif;*.png;*.txt;*.swf;*/wechat/*;</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>WeixinAutoLoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <!-- 启用Session Scope -->
     <listener>
         <listener-class>
