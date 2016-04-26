@@ -57,6 +57,11 @@ CREATE TABLE SYS_USER_ROLE_RELATIONSHIP
    ID bigint NOT NULL AUTO_INCREMENT,
    SYS_USER_ID          INT NOT NULL,
    SYS_ROLE_ID          INT NOT NULL,
+
+   LAST_MODIFIED_BY     varchar(32),
+   LAST_MODIFIED_DATE   time,
+   CREATE_DATE          TIMESTAMP,
+   CREATE_BY            CHAR(32)             ,
    PRIMARY KEY (ID)
 )
 

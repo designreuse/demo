@@ -26,6 +26,7 @@ import com.ozh.core.service.SysUserService;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * (服务层实现)
@@ -48,11 +49,16 @@ public class SysUserServiceImpl extends AbstractBaseService<SysUser, Long> imple
 	 public SysUser registerUser(SysUser sysUser) throws BusinessException {
 		SysUser user = new SysUser();
 		BeanUtils.copyProperties(sysUser, user);
+		user.getUserPsw();
 		user.setIsDelete(BoolCodeEnum.NO.toCode());
 		user.setIsAdmin(BoolCodeEnum.NO.toCode());
 		user.setLastPswModifyTime(new Date());
+		user.setCreateDate(new Date());
 		if(user.getUserSexCode() == null){
 			user.setUserSexCode(UserSexCodeEnum.SECRET.toCode());
+		}
+		if(user.getLoginId() == null){
+			user.setLoginId(user.getUserMobile());
 		}
 		save(user);
 		//角色关系
@@ -88,6 +94,8 @@ public class SysUserServiceImpl extends AbstractBaseService<SysUser, Long> imple
 			SysUserRoleRelationship sysUserRoleRelationship = new SysUserRoleRelationship();
 			sysUserRoleRelationship.setSysUserId(sysUser.getId().intValue());
 			sysUserRoleRelationship.setSysRoleId(sysRole.getId().intValue());
+			sysUserRoleRelationship.setLastModifiedDate(new Date());
+			sysUserRoleRelationship.setCreateDate(new Date());
 			SpringContextHolder.getBean(SysUserRoleRelationshipService.class).save(sysUserRoleRelationship);
 		}
 
@@ -96,5 +104,28 @@ public class SysUserServiceImpl extends AbstractBaseService<SysUser, Long> imple
 	@Override
 	public Page findUserList(Pageable pageable,String search) {
 		return getSysUserRepository().findUserList(pageable,search);
+	}
+
+	@Override
+	public List<SysUser> findByUserMobile(String userMobile) {
+		return getSysUserRepository().findByUserMobile(userMobile);
+	}
+
+	@Override
+	public SysUser findByLoginId(String loginId) {
+		return  getSysUserRepository().findByLoginId(loginId);
+	}
+
+	@Override
+	public SysUser loginToFrontByIdEmailMoble(String loginId, String userPsw) {
+		SysUser user = getSysUserRepository().findByLoginId(loginId);
+		//todo 以后再优化
+		if(user!=null){
+			if(user.getUserPsw().equals(userPsw)){
+				WebContextFactory.getWebContext().setFrontEndUser(user);
+				return user;
+			}
+		}
+		return null;
 	}
 }

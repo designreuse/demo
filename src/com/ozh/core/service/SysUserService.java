@@ -7,6 +7,8 @@ import com.ozh.core.entity.SysUser;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * (服务层类)
  * @author by ozh core generator
@@ -22,6 +24,12 @@ public interface SysUserService extends IBaseService<SysUser, Long> {
 
 
     Page findUserList(Pageable pageable,String search);
+
+    List<SysUser> findByUserMobile(String userMobile);
+
+    SysUser findByLoginId(String loginId);
+
+    SysUser loginToFrontByIdEmailMoble(String loginId, String userPsw);
 }
 
 

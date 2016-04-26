@@ -31,7 +31,7 @@
     <header class="header">
       <a href="javascript:" onclick="history.go(-1);" class="back"></a>
       <div class="tit">登陆</div>
-      <a href="${webRoot}/wap/regist.ac" class="hd-save">注册</a>
+      <a href="${webRoot}/template/ou/wap/regist.jsp" class="hd-save">注册</a>
     </header>
   <form method="post"  id="loginForm" name="loginForm" >
     <div class="main">

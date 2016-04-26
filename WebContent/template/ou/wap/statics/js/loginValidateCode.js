@@ -72,37 +72,16 @@
             $.ajax({
                 type:"POST",
                 url:settings.contextPath+settings.url,
-                data:{loginId:loginId.val(),userPsw:$.md5(userPsw.val()),validateCode:validateCode.val(),dicuzPsw:userPsw.val()},
+                //data:{loginId:loginId.val(),userPsw:$.md5(userPsw.val()),validateCode:validateCode.val(),dicuzPsw:userPsw.val()},
+                data:{loginId:loginId.val(),userPsw:userPsw.val(),validateCode:validateCode.val(),dicuzPsw:userPsw.val()},
                 dataType: "json",
                 success:function(data) {
-                    if (data.success == false) {
-                        checkLoginResult(data);
-                    }else{
-                        if(isNotNull(data.sysUserId)) {
-                            //$(".btn .log-btn").removeClass("notlog-btn").text("登陆");
-                            //$("#sysUserId").val(data.sysUserId);
-                            location.href =settings.contextPath+"/wap/completeData.ac?sysUserId="+data.sysUserId ;
-                            //需要完善信息
-                            //showDialog('#perfectUserInfoDialog');
-                            //老用户完善信息 验证码
-                           // changValidateCodeNew();
-                           // var account= $.cookie('oldUserMaxInactive');
-                            /*if(account!=null){
-                                isInactiveTime();
-                            }*/
-                        } else{
-                            $("#discuzLogin").html(data.loginScript);
-                            if(data.redirectUrl=="redirect:/"){
-                                location.href = settings.contextPath+"/" ;
-                            }
-                            else if(data.redirectUrl==null){
-                                location.href =settings.contextPath+"/wap/index.ac" ;
-                            }else{
-                                setTimeout(function(){
-                                    location.href = data.redirectUrl
-                                },3);
-                            }
-                        }
+
+                    if(isNotNull(data)) {
+                        location.href =settings.contextPath+"/template/ou/wap/index.jsp?sysUserId="+data.id ;
+                    } else{
+                        $("#alert2").show();
+                        $("#alerttext").html("<span style='color: #fff'>密码或账号错误！<span>")
                     }
 
                 },
@@ -117,53 +96,6 @@
 
         }
 
-        function checkLoginResult(data){
-            if (data.errorCode == "errors.login.userstat") {
-                $("#alert").show();
-                $("#alerttext").html("<span style='color: #fff'>用户已被冻结，请联系客服！<span>");
-                $("#loginId").val("");
-                $("#loginId").focus();
-            }
-            else if (data.errorCode == "errors.login.noexist") {
-                $("#alert").show();
-                //$("#alerttext").html("<span style='color: #fff'>该账户名不存在<span>")
-                $(".pop-layer").show();
-                setTimeout(function(){$(".pop-layer").hide();},3000);
-                $("#loginId").focus();
-                $("#loginId").val("");
-                $("#validateCode").val("");
-            }
-            else if (data.errorCode == "errors.login.password") {
-                $("#alert2").show();
-                $("#alerttext1").html("<span style='color: #fff'>用户名与密码不匹配<span>");
-                $("#userPsw").focus();
-                $("#userPsw").val("");
-                $("#validateCode").val("");
-            } else if (data.errorCode == "errors.login.no.remain.time") {
-                $("#alert2").show();
-                $("#alerttext1").html("<span style='color: #fff'>"+"您今天密码出错次数已用完，已被系统屏蔽"+"<span>");
-                $("#validateCode").focus();
-                $("#validateCode").val("");
-            } else if (data.errorCode == "errors.remain.time.login.password") {
-                $("#alert2").show();
-                $("#alerttext1").html("<span style='color: #fff'>"+data.errorText+"<span>");
-                $("#userPsw").focus();
-                $("#userPsw").val("");
-                $("#validateCode").val("");
-
-            }else  if(data.errorCode=="errors.login.validate"){
-                $("#alert3").show();
-                $("#alerttext2").html("<span style='color: #fff'>验证码错误<span>");
-                $("#validateCode").focus();
-                $("#validateCode").val("");
-            }
-            else {
-                $("#alert").show();
-                $("#alerttext").html("<span style='color: #fff'>账户冻结或账户已被删除<span>");
-                $("#loginId").val("");
-                $("#loginId").focus();
-            }
-        }
         function showDialog(text,buttons){
             $("#tiptext").html(text);
             $("#tip").dialog({

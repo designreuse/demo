@@ -18,4 +18,12 @@
         <function-signature>com.ozh.module.demo.vo.UserVo getUserInf()</function-signature>
     </function>
 
+    <!--用户-->
+    <function>
+        <name>getLoginUser</name>
+        <function-class>com.ozh.sdk.functions.UserApi</function-class>
+        <function-signature>
+            com.ozh.module.demo.vo.UserVo getLoginUser()
+        </function-signature>
+    </function>
 </taglib>

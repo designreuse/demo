@@ -1,0 +1,19 @@
+body{background-color: #f2f1f5;}
+.main01{padding-top: 1rem; position: relative; }
+.main01 input{display: block; width: 100%; font-size: 1.6rem; padding-left: 2rem; height: 4.4rem; border: 1px solid #cccccc; line-height: 4.4rem; }
+.main01 .yzm-btn{display: inline-block; border-radius: 0.4rem; color: #f0226e; border: 1px solid #f0226e; width: 8rem; height: 3rem; text-align: center; font-size: 1.2rem; line-height: 3rem; position: absolute; top: 0.7rem; right: 1rem;}
+.main01 .next-btn{display: block; width: 93.7%; height: 4.5rem; line-height: 4.5rem; border-radius: 0.5rem; font-size: 1.4rem; margin: 1.9rem auto; background-color: #f0226e; text-align: center; color: #fff;}
+
+.main02{padding-top: 1rem; padding-bottom: 5rem;}
+.main02 input{display: block; width: 100%; font-size: 1.6rem; padding-left: 5.5rem; height: 4.4rem; border: 1px solid #cccccc; line-height: 4.4rem; }
+.main02 .name{border-bottom: none; background:#fff url("../images/name-icon2.png") no-repeat scroll 2.3rem center /  1.7rem auto;}
+.main02 .psword{background:#fff url("../images/psword-icon.png") no-repeat scroll 2.2rem center /  1.7rem auto;}
+
+.main02 .sign-btn{display: block; width: 93.7%; height: 4.5rem; line-height: 4.5rem; border-radius: 0.5rem; font-size: 1.4rem; margin: 1.9rem auto; background-color: #f0226e; text-align: center; color: #fff;}
+.main02 .agree{width: 91%; margin: 1rem auto 0; overflow: hidden;}
+.main02 .agree .all-sel{display: block; width: 1.5rem; height: 1.5rem; float: left; background: url("../images/sel-icon1.png") no-repeat scroll center /  1.5rem auto;}
+.main02 .agree .selected{background: url("../images/sel-icon2.png") no-repeat scroll center /  1.5rem auto;}
+.main02 .agree span{float: left; padding-left: 1.6rem; font-size: 1.2rem; color: #666; line-height: 1.5rem;}
+.main02 .agree .ag-link{float: left; font-size: 1.2rem; color: #f0226e; line-height: 1.5rem;}
+
+.main02 .notlog-btn{background-color: #6B6B6B;}
